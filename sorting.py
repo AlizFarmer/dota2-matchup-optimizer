@@ -1,5 +1,14 @@
 def quick_sort(arr, key=None, reverse=False):
+    """
+    Quick Sort implementation for sorting heroes.
     
+    Time Complexity:
+    - Best Case: O(n log n)
+    - Average Case: O(n log n)
+    - Worst Case: O(n²)
+    
+    Space Complexity: O(log n) - recursion stack
+    """
     if len(arr) <= 1:
         return arr
     

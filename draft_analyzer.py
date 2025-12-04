@@ -2,10 +2,6 @@ from sorting import quick_sort
 
 
 class DraftRecommendation:
-    """
-    Analyzes enemy team composition and recommends hero picks.
-    Uses Quick Sort algorithm for ranking heroes.
-    """
     
     def __init__(self, heroes_dict):
         """
@@ -174,4 +170,5 @@ class DraftRecommendation:
         for rank, (hero, enemy_name, enemy_wr) in enumerate(recommendations, 1):
             print(f"{rank:<6} {hero.name:<25} {enemy_name:<20} {hero.win_rate}%")
         
+
         print("=" * 70)
